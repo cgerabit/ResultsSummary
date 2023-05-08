@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\assets\fonts\HankenGrotesk-VariableFont_wght.ttf" />
+    <None Include="wwwroot\assets\fonts\README.txt" />
+    <None Include="wwwroot\assets\fonts\static\HankenGrotesk-Bold.ttf" />
+    <None Include="wwwroot\assets\fonts\static\HankenGrotesk-ExtraBold.ttf" />
+    <None Include="wwwroot\assets\fonts\static\HankenGrotesk-Medium.ttf" />
+    <None Include="wwwroot\assets\images\favicon-32x32.png" />
+    <None Include="wwwroot\assets\images\icon-memory.svg" />
+    <None Include="wwwroot\assets\images\icon-reaction.svg" />
+    <None Include="wwwroot\assets\images\icon-verbal.svg" />
+    <None Include="wwwroot\assets\images\icon-visual.svg" />
+  </ItemGroup>
+
+</Project>

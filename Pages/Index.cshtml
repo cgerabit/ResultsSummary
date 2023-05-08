@@ -1,0 +1,72 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="principal-container">
+
+<div class="main-container">
+
+    <div class="header-container">
+        <div class="title-container mb-3"> 
+           <h2 class="standart-title">Your result</h2>
+        </div>
+           <div class="score-container">
+               <h2 class="current-score big-title">76</h2>
+               <h3 class="maximum-score standart-title">of 100</h3>
+           </div>
+           <div class="performance-container">
+               <h2 class="great-title">Great</h2>
+               <p class="small-title">Your performance exceed 65% of the people conducting the test here</p>
+           </div>
+    </div>
+    <div class="summary-container">
+        <h2 class="sumary-title darknavy-title">Summary</h2>
+        <ul class="summary">
+            <li class="summary-li red-shadow">
+                <div class="summary-li-container">
+                    <img src="~/assets/images/icon-reaction.svg" class="summary-li-icon" />
+                    <span class="summary-text red-text">Reaction</span>
+                </div>
+                <div class="summary-li-score">
+                    <span class="darknavy-title">80</span><span class="darknavy-title" style="opacity:0.52"> / 100</span>
+                </div>
+            </li>
+            <li class="summary-li yellow-shadow" >
+                <div class="summary-li-container">
+                    <img src="~/assets/images/icon-memory.svg" class="summary-li-icon" />
+                    <span class="yellow-text summary-text" >Memory</span>
+                </div>
+                <div class="summary-li-score">
+                    <span class="darknavy-title">92</span><span class="darknavy-title" style="opacity:0.52"> / 100</span>
+                </div>
+            </li>
+            <li class="summary-li green-shadow">
+                <div class="summary-li-container">
+                    <img src="~/assets/images/icon-verbal.svg" class="summary-li-icon" />
+                    <span class="green-text summary-text">Verbal</span>
+                </div>
+                <div class="summary-li-score">
+                    <span class="darknavy-title">61</span><span class="darknavy-title" style="opacity:0.52"> / 100</span>
+                </div>
+            </li>
+            <li class="summary-li blue-shadow">
+                <div class="summary-li-container">
+                    <img src="~/assets/images/icon-visual.svg" class="summary-li-icon" />
+                    <span class="blue-text summary-text">Visual</span>
+                </div>
+                <div class="summary-li-score">
+                    <span class="darknavy-title">73</span><span class="darknavy-title" style="opacity:0.52"> / 100</span>
+                </div>
+            </li>
+        </ul>
+            <div class="summary-action">
+                <button class="btn btn-primary button-text">
+                    Continue
+                </button>
+            </div>
+    </div>
+   
+</div>
+</div>
