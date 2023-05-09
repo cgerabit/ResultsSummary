@@ -1,7 +1,20 @@
+using Microsoft.EntityFrameworkCore;
+
+using ResultsSummary.services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+
+builder.Services.AddSingleton<ResultsRepository>();
+
+builder.Services
+    .AddDbContext<ApplicationDbContext>
+    (options => options.UseSqlServer(builder.Configuration.GetConnectionString("default")));
+
+builder.Services.AddAutoMapper(typeof(AutomapperProfiles));
+
 
 var app = builder.Build();
 
@@ -13,7 +26,7 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();

@@ -4,6 +4,7 @@
     ViewData["Title"] = "Home page";
 }
 
+
 <div class="principal-container">
 
 <div class="main-container">
@@ -13,12 +14,12 @@
            <h2 class="standart-title">Your result</h2>
         </div>
            <div class="score-container">
-               <h2 class="current-score big-title">76</h2>
+               <h2 class="current-score big-title">@((int)Model.Model.AverageScore)</h2>
                <h3 class="maximum-score standart-title">of 100</h3>
            </div>
            <div class="performance-container">
                <h2 class="great-title">Great</h2>
-               <p class="small-title">Your performance exceed 65% of the people conducting the test here</p>
+               <p class="small-title">Your performance exceed @Model.Model?.PercentOfPeople% of the people conducting the test here</p>
            </div>
     </div>
     <div class="summary-container">
@@ -30,7 +31,7 @@
                     <span class="summary-text red-text">Reaction</span>
                 </div>
                 <div class="summary-li-score">
-                    <span class="darknavy-title">80</span><span class="darknavy-title" style="opacity:0.52"> / 100</span>
+                        <span class="darknavy-title">@Model.Model?.ReactionScore</span><span class="darknavy-title" style="opacity:0.52"> / 100</span>
                 </div>
             </li>
             <li class="summary-li yellow-shadow" >
@@ -39,7 +40,7 @@
                     <span class="yellow-text summary-text" >Memory</span>
                 </div>
                 <div class="summary-li-score">
-                    <span class="darknavy-title">92</span><span class="darknavy-title" style="opacity:0.52"> / 100</span>
+                        <span class="darknavy-title">@Model.Model?.MemoryScore</span><span class="darknavy-title" style="opacity:0.52"> / 100</span>
                 </div>
             </li>
             <li class="summary-li green-shadow">
@@ -48,7 +49,7 @@
                     <span class="green-text summary-text">Verbal</span>
                 </div>
                 <div class="summary-li-score">
-                    <span class="darknavy-title">61</span><span class="darknavy-title" style="opacity:0.52"> / 100</span>
+                        <span class="darknavy-title">@Model.Model?.VerbalScore</span><span class="darknavy-title" style="opacity:0.52"> / 100</span>
                 </div>
             </li>
             <li class="summary-li blue-shadow">
@@ -57,7 +58,7 @@
                     <span class="blue-text summary-text">Visual</span>
                 </div>
                 <div class="summary-li-score">
-                    <span class="darknavy-title">73</span><span class="darknavy-title" style="opacity:0.52"> / 100</span>
+                        <span class="darknavy-title">@Model.Model?.VisualScore</span><span class="darknavy-title" style="opacity:0.52"> / 100</span>
                 </div>
             </li>
         </ul>
